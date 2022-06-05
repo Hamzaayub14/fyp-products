@@ -36,7 +36,7 @@ router.get('/edit/:id',async function(req, res, next) {
     //  res.send("ID from url: "+req.params.id);
       let product = await Product.findById(req.params.id);
       // await product.delete();
-      product.title = req.body.title
+      product.name = req.body.name
       product.price=req.body.price
       await product.save()
       res.redirect("/products");

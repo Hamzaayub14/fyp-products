@@ -14,19 +14,23 @@ block content
                        
                        
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="/images/img1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/car.jpg" alt="Card image cap">
                         <div class="card-body">
                             h5=product.name
-                            p="Rs"+product.price
+                            p="Rs "+product.price
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                a(href="products/delete/"+product._id )
-                                 i(class="fa-solid fa-trash-can")
-                                a(href="products/edit/"+product._id ) 
-                                 i(class="fa-solid fa-pen-circle")
-                                a(href="products/cart/"+product._id)
-                                 <i class="fa-solid fa-cart-arrow-down"></i> 
+                                div.buttons
+                                    
+                                    a(href="products/cart/"+product._id)
+                                        <i class="fa-solid fa-cart-arrow-down"></i> 
+                                    if user
+                                        a(href="products/edit/"+product._id ) 
+                                            <i class="fa-solid fa-pen"></i>
+                                        a(href="products/delete/"+product._id )
+                                            i(class="fa-solid fa-trash-can")
+                                
                         </div>
                     </div>
-                       //.buttons
+                       
                              
                             
