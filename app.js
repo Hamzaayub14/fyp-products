@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-mongoose.connect("mongodb+srv://hamza:admin@cluster0.1hrwsjd.mongodb.net/test",
+mongoose.connect("mongodb+srv://hamza:admin@cluster0.1hrwsjd.mongodb.net/productcrud",
 { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('Connected to MongoDB...'))
 .catch((error) => console.log(error.message));
