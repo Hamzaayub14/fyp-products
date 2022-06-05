@@ -1,8 +1,133 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+ 
 }
+.container{
+  width: 100%;
+
+}
+
+/* body {
+  padding: 0;
+  width:100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
 
 a {
   color: #00B7FF;
 }
+
+  .new {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
+  }
+  
+  .new .navbar-nav .nav-item {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0 1rem;
+  }
+  
+  .bgd {
+    background-color: #33373c;
+    width: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    }
+.carousel-item {
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.caros-title{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    user-select: none;
+}
+
+.heading {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.heading-1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.heading-3 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+} 
+
+
+.categories-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+} 
+
+.img-style {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.hover-underline-animation {
+    position: relative;
+
+  }
+  
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #4dafe3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* @media only screen and (max-width: 800px) {
+    .heading {
+      font-size: 150%;
+    }
+  } */
