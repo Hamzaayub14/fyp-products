@@ -17,20 +17,17 @@
 a {
   color: #00B7FF;
 }
+.navbarr{
+ 
+  /* height: 50px; */
+  width: 100%;
+  /* position: fixed; */
+  /* top: 0; */
+  left: 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
 
-  .new {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 1rem;
-  }
-  
-  .new .navbar-nav .nav-item {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 0 1rem;
-  }
-  
   .bgd {
     background-color: #33373c;
     width: 100%;
@@ -131,3 +128,19 @@ a {
       font-size: 150%;
     }
   } */
+.products{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+.buttons a{
+ margin: 0 0.5rem;
+ color: black;
+}
+.center a{
+  text-decoration: none;
+  color: black;
+}

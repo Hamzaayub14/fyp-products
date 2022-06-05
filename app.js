@@ -9,6 +9,7 @@ var productsRouter = require('./routes/products');
 var usersRouter = require('./routes/users');
 var session = require('express-session')
 var sessionAuth = require("./middlewares/sessionAuth")
+
 const { default: mongoose } = require('mongoose');
 
 var app = express();

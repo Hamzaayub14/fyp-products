@@ -6,20 +6,16 @@ block content
             h1=title
         .col.sm-4
             a(href="products/add",class = "btn btn-success float-right") Add Product
-    table.table     
-        thead 
-            tr 
-                th Name
-                th Price
-                th Actions
-            tbody 
-                each product in products
-                    tr 
-                        td=product.title       
-                          
-                        td=product.price
-                           
-                        td
-                          a(href="products/delete/"+product._id,class = "btn btn-danger ") Delete
-                          a(href="products/edit/"+product._id,class = "btn btn-primary") Edit
-                          a(href="products/cart/"+product._id,class = "btn btn-warning") Add to cart
+        div.products             
+                 each product in products
+                   
+                       h4= product.title       
+                             
+                       p= "Rs." +product.price
+                       .buttons
+                             a(href="products/delete/"+product._id )
+                                 i(class="fa-solid fa-trash-can")
+                             a(href="products/edit/"+product._id ) 
+                                 i(class="fa-solid fa-pen-circle")
+                             a(href="products/cart/"+product._id)
+                                 <i class="fa-solid fa-cart-arrow-down"></i>
